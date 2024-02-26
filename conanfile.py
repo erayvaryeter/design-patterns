@@ -10,7 +10,7 @@ class DesignPatternsConan(ConanFile):
     description = "tools"
     no_copy_source = True
     exports_sources = [ "*" ]
-
+    
     def imports(self):
        self.copy("*.dll")
     
