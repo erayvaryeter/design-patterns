@@ -3,12 +3,12 @@
     {
       "name": "Debug",
       "cacheRoot": "D:/BUILD/debug",
-      "cacheGenerationCommand": "GenerateCache.bat Debug"
+      "cacheGenerationCommand": "GenerateCache.bat Debug D:\\BUILD\\debug"
     },
     {
       "name": "Release",
       "cacheRoot": "D:/BUILD/release",
-      "cacheGenerationCommand": "GenerateCache.bat Release"
+      "cacheGenerationCommand": "GenerateCache.bat Release D:\\BUILD\\release"
     }
   ]
 }
