@@ -42,16 +42,22 @@ xcopy %project_install_folder%\conanbuildinfo.cmake %project_build_folder%
 
 set /A includes_started=0
 set /A includes_finished=0
+set nmake_includes=
+
 for /f "tokens=*" %%a in (%project_install_folder%\conanbuildinfo.txt) do (
 	if %%a==[libdirs] (
 		set /A includes_finished=1
 	)
 	if !includes_started!==1 (
 		if !includes_finished!==0 (
-			echo %%a
+			set nmake_includes=!nmake_includes!%%a;
 		)
 	)
 	if %%a==[includedirs] (
 		set /A includes_started=1
 	)
 )
+
+set comment=COPY THE FOLLOWING LINE TO NMake: Include Search Path
+echo %comment%
+echo %nmake_includes%

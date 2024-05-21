@@ -8,6 +8,7 @@ set base_build_folder=C:\\.conan\\BUILD\\
 set project_install_folder=%base_install_folder%%project_name%\\
 set project_build_folder=%base_build_folder%%project_name%\\
 set conan_build_command=conan build .
+set conan_export_command=conan export-pkg .
 
 if %configuration_param%==Windows-Debug (
 	set project_install_folder=%project_install_folder%win-debug
@@ -20,5 +21,7 @@ if %configuration_param%==Windows-Release (
 )
 
 set conan_build_command=%conan_build_command% --install-folder %project_install_folder% --build-folder %project_build_folder% --build
+set conan_export_command=%conan_export_command% --install-folder %project_install_folder% --build-folder %project_build_folder%
 
 %conan_build_command%
+%conan_export_command%

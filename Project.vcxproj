@@ -72,6 +72,7 @@
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeReBuildCommandLine>configure_vs.bat Windows-Debug</NMakeReBuildCommandLine>
     <NMakeBuildCommandLine>build_vs.bat Windows-Debug</NMakeBuildCommandLine>
+    <NMakeIncludeSearchPath>D:/conan/.conan/data/cxxopts/3.2.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;D:/conan/.conan/data/catch2/3.5.1/_/_/package/26671a2ee324eb7bd208b41ee6ba577869c4c1b5/include;</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeOutput>Project.exe</NMakeOutput>
