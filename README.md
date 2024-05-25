@@ -19,7 +19,7 @@ Singleton pattern is a design pattern that ensures only one instance of the clas
 - There must be a static GetInstance method, which provides access to the single instance of the Singleton class. This uses lazy initialization, meaning it creates the instance only once when this method is called for the first time.
 - Copy constructor and assignment operator must be deleted to prevent copying of the instance, ensuring there is only one instance.
 
-An example of singleton design pattern can be found under creational/singleton directory. 
+An example of singleton design pattern can be found under creational/singleton directory. Logger is a good example for a singleton design pattern.
 ### 1.3 Object Pool
 ## 2. Structural Design Patterns
 ### 2.1 Adapter
