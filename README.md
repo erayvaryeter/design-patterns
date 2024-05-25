@@ -12,8 +12,11 @@ This design pattern has the following elements:
 - Concrete Factories: Concrete factory classes implement the abstract factory interface. Each concrete factory is responsible for creating a specific family of related products. In our example, concrete factories are Windows Factory, Linux Factory and Mac Factory.
 - Client: Client code works with the abstract factory and abstract product interfaces. It doesn't need to know the concrete classes of the products it uses, it relies on the factory to create compatible objects. 
 ### 1.2 Singleton
+Singleton pattern is a design pattern that ensures only one instance of the class can exist in the entire program, which means it will provide a global point of access to that specific instance. Implementation of this class can be done by the following points.
+- Constructor and destructor must be private, which ensures that class can only be instantiated and destroyed from within the class itself.
+- There must be a static GetInstance method, which provides access to the single instance of the Singleton class. This uses lazy initialization, meaning it creates the instance only once when this method is called for the first time.
+- Copy constructor and assignment operator must be deleted to prevent copying of the instance, ensuring there is only one instance.
 ### 1.3 Object Pool
-
 ## 2. Structural Design Patterns
 ### 2.1 Adapter
 
