@@ -21,6 +21,9 @@ Singleton pattern is a design pattern that ensures only one instance of the clas
 
 An example of singleton design pattern can be found under creational/singleton directory. Logger is a good example for a singleton design pattern.
 ### 1.3 Object Pool
+Object pool pattern is used to manage a pool/a collection of pre-initialized and reusable object. The main idea behind it is to avoid the overhead of creating and destroying objercts frequently by reusing them whenever needed. This can lead to performance improvements in scenarios where object creation and destruction are expensive operations. Object pool can be used for cases like database connection management, thread pool or network connections. 
+
+An example of object pool design pattern can be found under creational/object-pool directory.
 ## 2. Structural Design Patterns
 ### 2.1 Adapter
 
