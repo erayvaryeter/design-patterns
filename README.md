@@ -26,7 +26,9 @@ Object pool pattern is used to manage a pool/a collection of pre-initialized and
 An example of object pool design pattern can be found under creational/object-pool directory.
 ## 2. Structural Design Patterns
 ### 2.1 Adapter
+Adapter pattern is used to make two incompatible interfaces work seamlessly. It acts as a bridge between two different interfaces, allowing them to collaborate without modifying their own source code. This pattern is useful when integrating legacy code or third party libraries. 
 
+An example of adapter design pattern can be found under structural/adapter directory.
 ## 3. Behavioral Design Patterns
 ### 3.1 Command
 ### 3.2 Observer
