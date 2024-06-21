@@ -30,6 +30,10 @@ Adapter pattern is used to make two incompatible interfaces work seamlessly. It 
 
 An example of adapter design pattern can be found under structural/adapter directory.
 ## 3. Behavioral Design Patterns
-### 3.1 Command
-### 3.2 Observer
+### 3.1 Observer
+Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects, meaning that when one object changes its state, all its observers are notified and updated automatically. This pattern is used to build distributed event handling systems and it is a crucial part of many software architectures.
+- Subject is the object that is being observed. It maintains a list of observers and notifies them of state changes.
+- Observers are objects that are interested in the state changes of the subject. They register with the subhect to receive updates.
+
+An example of observer design pattern can be found under behavioral/observer directory.
 ### 3.3 State
