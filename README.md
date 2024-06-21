@@ -36,4 +36,3 @@ Observer pattern is a behavioral design pattern that defines a one-to-many depen
 - Observers are objects that are interested in the state changes of the subject. They register with the subhect to receive updates.
 
 An example of observer design pattern can be found under behavioral/observer directory.
-### 3.3 State
